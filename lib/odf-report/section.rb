@@ -41,8 +41,6 @@ module ODFReport
 
     end # replace_section
 
-  private
-
     def find_section_node(doc)
 
       sections = doc.xpath(".//text:section[@text:name='#{@name}']")
