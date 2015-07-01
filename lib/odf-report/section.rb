@@ -2,7 +2,7 @@ module ODFReport
 
   class Section
     include Nested
-
+    attr_reader :name, :collection_field, :collection
     def initialize(opts)
       @name             = opts[:name]
       @collection_field = opts[:collection_field]
